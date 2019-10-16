@@ -1,0 +1,55 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+.skill{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:5%
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: beige;
+}
+
+header {
+    border-top: 10px solid;
+    margin: 0
+}
+
+.skills { 
+    width: 100%; 
+    height: 200px; 
+    padding-top:20px;
+    position: relative;
+    border-top: 1px solid black; 
+    text-align: center;
+}
+.skills2 {
+    top:-20px;
+    position: absolute;
+    font-size: 40px; 
+    background-color: #F3F5F6; 
+    padding: 0 10px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+}
