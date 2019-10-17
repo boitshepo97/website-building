@@ -2,6 +2,7 @@ html,body {
     margin: 0;
     padding: 0;
 }
+
 .skill{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -18,38 +19,161 @@ ul {
     padding: 0;
 }
 
+.hero {
+    text-align: center;
+    margin: 10% auto 10%;
+    height: 600px;
+    width: 600px;
+    border: 10px outset rgba(110, 10, 156, 0.4);
+    background-size: cover;
+    background-image: url("backgrounds/IMG-20170806-WA0008.jpg");
+    background-attachment: scroll;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero .logo img {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    top: -5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero .skills2 {
+    top: 0;
+    position: absolute;
+}
+.title {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    font-size: 60px;
+    font-family: Gill Sans;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(600px + 400px);
+    text-align: center;
+}
+.title .oh {
+    display: block;
+}
+
+.title > span{
+    font-weight: 300;
+    color: purple;
+}
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: beige;
+    background-color: grey;
 }
 
 header {
-    border-top: 10px solid;
-    margin: 0
+    border-top: 20px solid rgba(110, 10, 156, 0.678);
+    margin: 0;
 }
 
-.skills { 
-    width: 100%; 
-    height: 200px; 
-    padding-top:20px;
-    position: relative;
-    border-top: 1px solid black; 
-    text-align: center;
+#home {
+    border-radius: 5%;
+    margin-top: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: rgba(110, 10, 156, 0.678);
+    border: solid 2px rgba(110, 10, 156, 0.678);
 }
-.skills2 {
-    top:-20px;
-    position: absolute;
-    font-size: 40px; 
-    background-color: #F3F5F6; 
-    padding: 0 10px;
+.companies {
+    text-decoration: none;
 }
 
 .logo {
+    background-image: url("backgrounds/Untitled-4.png");
+    text-align: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.box-wrapper {
+   padding: 20px 0; 
+   position: relative;
+   border-top: solid 2px #333;
+}
+
+.box {
+    gap: 5%;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-title {
+    top: -40px;
+    left: 40%;
+    padding: 0 10px;
+    background-color: grey;
+    position: absolute;
     text-align: center;
 }
 
-.container {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5%;
+.box-item {
+    padding: 20px;
 }
+
+.btn-cv {
+    border-radius: 5%;
+    padding: 10px 25px;
+    text-decoration: none;
+    border: solid 2px #333;
+    background-color: rgba(110, 10, 156, 0.4);
+}
+
+.box-circle {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url("backgrounds/IMG-20170806-WA0008.jpg");
+}
+
+@media only screen and (max-width: 600px) {   
+}
+
+.page {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.par{
+    position: absolute;
+    transition: color 250ms ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+}
+
+.box-circle:hover .par {
+    opacity: 1;
+    padding: 0 10px;
+}
+
+.box-circle:hover .overlay {
+    position: absolute;
+    transition: color 250ms ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+ 
