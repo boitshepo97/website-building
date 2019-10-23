@@ -19,6 +19,16 @@ ul {
     padding: 0;
 }
 
+.social-media {
+    color:  black;
+    padding: 20px;
+    text-decoration: none;
+    float: right;
+    font-size: 30px;
+}
+
+
+
 .hero {
     text-align: center;
     margin: 10% auto 10%;
@@ -26,7 +36,7 @@ ul {
     width: 600px;
     border: 10px outset rgba(110, 10, 156, 0.4);
     background-size: cover;
-    background-image: url("backgrounds/IMG-20170806-WA0008.jpg");
+    background-image: url("backgrounds/IMG-20170806-WA0011.jpg");
     background-attachment: scroll;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -97,9 +107,10 @@ header {
 }
 
 .box-wrapper {
-   padding: 20px 0; 
-   position: relative;
-   border-top: solid 2px #333;
+    margin: 20px 0;
+    padding: 20px 0; 
+    position: relative;
+    border-top: solid 2px #333;
 }
 
 .box {
@@ -130,20 +141,43 @@ header {
     background-color: rgba(110, 10, 156, 0.4);
 }
 
-.box-circle {
+.box-circle1 {
     position: relative;
     height: 300px;
     width: 300px;
     margin: 20px;
+    padding: 20px;
     border-radius: 50%;
     background-size: cover;
-    background-image: url("backgrounds/IMG-20170806-WA0008.jpg");
+    background-image: url("backgrounds/blur-codes-coding-577585.jpg");
 }
 
-@media only screen and (max-width: 600px) {
-    .box-wrapper { width: 100%;
-    }   
+.box-circle2 {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url("backgrounds/background-bit-bytes-2004161.jpg");
 }
+
+.box-circle3 {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url("backgrounds/charts-data-desk-669615.jpg");
+}
+
+/* @media only screen and (max-width: 600px) {
+    .box-wrapper { width: 100%;
+    }    */
+
 
 .page {
     padding-left: 10px;
@@ -151,6 +185,7 @@ header {
 }
 
 .par{
+    color: purple;
     position: absolute;
     transition: color 250ms ease;
     top: 50%;
@@ -161,12 +196,12 @@ header {
     opacity: 0;
 }
 
-.box-circle:hover .par {
+.box-circle1:hover .par {
     opacity: 1;
     padding: 0 10px;
 }
 
-.box-circle:hover .overlay {
+.box-circle1:hover .overlay {
     position: absolute;
     transition: color 250ms ease;
     top: 0;
@@ -175,6 +210,47 @@ header {
     height: 100%;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.box-circle2:hover .par {
+    opacity: 1;
+    padding: 0 10px;
+}
+
+.box-circle2:hover .overlay {
+    position: absolute;
+    transition: color 250ms ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.box-circle3:hover .par {
+    opacity: 1;
+    padding: 0 10px;
+}
+
+.box-circle3:hover .overlay {
+    position: absolute;
+    transition: color 250ms ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.copywrite {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-top: solid 2px black;
 }
 
 .poems {
