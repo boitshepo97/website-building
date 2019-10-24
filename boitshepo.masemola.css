@@ -36,7 +36,7 @@ ul {
     width: 600px;
     border: 10px outset rgba(110, 10, 156, 0.4);
     background-size: cover;
-    background-image: url("backgrounds/IMG-20170806-WA0011.jpg");
+    background-image: url("backgrounds/IMG-20170806-WA0011.jpg");   
     background-attachment: scroll;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -104,6 +104,14 @@ header {
     text-align: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
+}
+
+.nav3 {
+    text-align: center;
+    color:  purple;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 .box-wrapper {
@@ -174,9 +182,12 @@ header {
     background-image: url("backgrounds/charts-data-desk-669615.jpg");
 }
 
-/* @media only screen and (max-width: 600px) {
-    .box-wrapper { width: 100%;
-    }    */
+ @media only screen and (max-width: 600px) {
+    .hero {
+        width: 300px;
+        height: 300px;
+    }
+}   
 
 
 .page {
@@ -253,7 +264,17 @@ header {
     border-top: solid 2px black;
 }
 
+.content {
+    margin: 20px;
+    padding: 20px;
+}
+
 .poems {
+    margin: 20px;
+    padding: 20px;
+}
+
+.videos {
     margin: 20px;
     padding: 20px;
 }
